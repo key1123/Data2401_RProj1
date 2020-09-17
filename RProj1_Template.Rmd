@@ -2,10 +2,14 @@
 title: "R Project 1 - Hello R"
 author: "Keoshia Grigsby"
 date: "9/16/2020"
-output: html_document
+output: 
+  html_document: 
+    fig_width: 10
+    fig_height: 10
+    fig_caption: yes
+    highlight: pygments
+    theme: journal
 ---
-
-MAKE SURE YOU READ AND FOLLOW **ALL** INSTRUCTIONS ON THE INSTRUCTION DOCUMENT. 
 
 ### Load packages
 
@@ -17,7 +21,8 @@ library(datasauRus)
 
 ### Exercise 1
 
-(1. 1846 rows and 3 variables, 2. the variables included are x and y)
+1. 1846 rows and 3 variables
+2. the variables included are x and y
 
 
 ### Exercise 2
@@ -79,8 +84,7 @@ circle_data %>%
 
 ```
 ### Exercise 5
-
-(Add code and narrative as needed. To add R chunks either type out the backticks, curly braces, and the letter `r` or use the Insert chunk button above, with the green +C.)
+All Datasets:
 ``` {r}
 ggplot(datasaurus_dozen, aes(x = x, y = y, color = dataset))+
   geom_point()+
@@ -88,10 +92,12 @@ ggplot(datasaurus_dozen, aes(x = x, y = y, color = dataset))+
   theme(legend.position = "none")
 ```
 
+Dataset correlation between `x` and `y`:
 ```{r}
 
 datasaurus_dozen %>%
   group_by(dataset) %>%
   summarize(r = cor(x, y)) %>%
   print(13)
+
 ```
