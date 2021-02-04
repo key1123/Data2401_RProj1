@@ -2,7 +2,7 @@
 title: "R Project 1 - Hello R"
 author: "Keoshia Grigsby"
 date: "02/02/2021"
-output:/ 
+output:
   html_document: 
     fig_width: 10
     fig_height: 10
@@ -16,6 +16,7 @@ output:/
 ```{r load-packages, message=FALSE}
 library(tidyverse) 
 library(datasauRus)
+
 ```
 
 
@@ -61,7 +62,8 @@ And next calculate the correlation between `x` and `y` in this dataset:
  
 ```{r cor-star}
 star_data %>%
-  summarize(r = cor(x, y))\
+  summarize(r = cor(x, y))
+
 ```
 
 ### Exercise 4
@@ -83,8 +85,10 @@ circle_data %>%
   summarize(r = cor(x, y))
 
 ```
- How does this value compare to the r of dino? 
+How does this value compare to the r of dino? 
   The r for dino and circle are close
+  
+  
 ### Exercise 5
 All Datasets:
 ``` {r}
