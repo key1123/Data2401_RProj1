@@ -22,7 +22,7 @@ library(datasauRus)
 ### Exercise 1
 
 1. 1846 rows and 3 variables
-2. the variables included are x and y
+2. the variables included are x, y, and dateset
 
 
 ### Exercise 2
