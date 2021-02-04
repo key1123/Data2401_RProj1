@@ -34,6 +34,7 @@ First let's plot the data in the dino dataset:
 dino_data <- datasaurus_dozen %>%
   filter(dataset == "dino")
 ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
+  
   geom_point()
 ```
 
