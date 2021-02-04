@@ -61,8 +61,7 @@ And next calculate the correlation between `x` and `y` in this dataset:
  
 ```{r cor-star}
 star_data %>%
-  summarize(r = cor(x, y))
-
+  summarize(r = cor(x, y))\
 ```
 
 ### Exercise 4
