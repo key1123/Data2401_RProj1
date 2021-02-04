@@ -83,6 +83,8 @@ circle_data %>%
   summarize(r = cor(x, y))
 
 ```
+ How does this value compare to the r of dino? 
+  The r for dino and circle are close
 ### Exercise 5
 All Datasets:
 ``` {r}
